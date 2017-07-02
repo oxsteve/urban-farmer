@@ -11,6 +11,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 8,cityid: '2820256',appid: '0f4c255667b942165f942d0925cd15ac',units: 'metric',containerid: 'openweathermap-widget-8',  });  (function() {var script = document.createElement('script');script.async = true;script.src = "https://openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();</script>
 </head>
 
 <body>
@@ -18,6 +19,7 @@
     <div class="page-header text-center">
       <img src="https://image.flaticon.com/icons/png/512/135/135702.png" alt="Tomato" height="50">
       <h1>Watering</h1>
+      <div id="openweathermap-widget-8"></div>
     </div>
     <div class="row">
       <div class="col-xs-6">
